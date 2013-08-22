@@ -228,6 +228,7 @@
           "  sudo -u ubuntu /home/ubuntu/sentry/env/bin/python $* || error_exit \"Failed to $*\"\n",
           "}\n",
 
+          "apt-get -y update && apt-get -y upgrade\n",
           "apt-get install -y build-essential python python-dev python-setuptools libevent-dev supervisor nginx postgresql postgresql-server-dev-all\n",
 
           "easy_install https://s3.amazonaws.com/cloudformation-examples/aws-cfn-bootstrap-1.0-6.tar.gz\n",
